@@ -13,13 +13,13 @@ int toInt(string exp) {
     return res;
 }
 
-//determines wheather input operation is + or -
+//determines whether input operation is + or -
 bool isMinOrPlus(string exp) {
     if (exp[0] == '+' || exp[0] == '-')return true;
     return false;
 }
 
-//determies wheather input is '/' or *
+//determines whether input is '/' or *
 bool isMultOrDiv(string exp) {
     if (exp[0] == '/' || exp[0] == '*') return true;
     return false;
@@ -44,7 +44,7 @@ void multOrDiv(string exp, string exp2, double &a, double &b) {
     }
 
 }
-//does addition or substraction
+//does addition or subtraction
 void minusOrPlus(string exp, string exp2, double& a, double& b, string &op) {
     if (op[0] == '+') a = a + b;
     else if (op[0] == '-') a = a - b;
